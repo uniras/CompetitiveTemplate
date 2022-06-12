@@ -35,8 +35,8 @@ namespace Competitive
         static string RawData = "";                                       //問題データ
         static List<string> LineData = new List<string>();                //行ごとのデータ
         static List<List<string>> SplitData = new List<List<string>>();   //(空白)文字ごとに分割したデータ
-        static List<List<long>> LongData = new List<List<long>>();        //分割データを整数(long)に変換したもの
-        static List<List<double>> DoubleData = new List<List<double>>();  //分割データを実数(double)に変換したもの
+        static List<List<long>> LongData = new List<List<long>>();        //分割データを整数(long型)に変換したもの
+        static List<List<double>> DoubleData = new List<List<double>>();  //分割データを実数(double型)に変換したもの
 
         //解答用文字列
         static string OutputData = "";
@@ -140,8 +140,8 @@ namespace Competitive
             //この中から必要なヘルパ関数を選ぶ
             GetLineData();              //問題データを行ごとに取得
             GetSplitData(' ');          //行データを特定の文字ごとに分割
-            GetConvertLongData();       //分割データをlong型に変換
-            //GetConvertDoubleData();   //分割データをdouble型に変換
+            GetConvertLongData();       //分割データを整数(long型)に変換
+            //GetConvertDoubleData();   //分割データを実数(double型)に変換
         }
 
 
