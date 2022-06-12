@@ -29,7 +29,6 @@ namespace Competitive
     using System;
     using System.Collections.Generic;
 
-
     public static class Competitive
     {
         //入力データ
